@@ -10,7 +10,7 @@ class havadurumu:
     def __init__(self,sehir_ismi):
         self.list=[]
         self.sehir_ismi=sehir_ismi
-        s = Service("C:/Users/can/PycharmProjects/pythonProject1/chromedriver.exe")
+        s = Service("your chrome chromedriver.exe path")
         self.driver=webdriver.Chrome(service=s)
         self.driver.get(f"https://www.mgm.gov.tr/tahmin/il-ve-ilceler.aspx?il={self.sehir_ismi}")
         time.sleep(2)
